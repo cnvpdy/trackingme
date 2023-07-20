@@ -1,65 +1,166 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <title>Document</title>
+    </head>
+    <body>
 
-  <h4 class="container mt-4"><strong>글 작성페이지</strong></h4>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-  <div class="container mt-3">
-    <form action="/add" method="POST">
-      <div class="form-group">
-        <label>오늘의 할일</label>
-        <input type="text" class="form-control" name="title">
-      </div>
-      <div class="form-group">
-        <label>날짜</label>
-        <input type="text" class="form-control" name="date">
-      </div>
-      <button type="submit" class="btn btn-outline-secondary">Submit</button>
-    </form>
-  </div>
+        <h4 class="container mt-4">
+            <strong>글 작성페이지</strong>
+        </h4>
 
+        <div class="container mt-3">
+            <form action="/add" method="POST">
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html>
+                <h1>Tracking Me</h1>
+
+                <h3>[구분]</h3>
+                <label for="tree1">구분</label>
+                <input type="text" list="searchOptions1" name="div"/>
+                <datalist id="searchOptions1">
+                    <option>실행</option>
+                    <option>할일</option>
+                    <option>일정</option>
+                </datalist>
+
+                <label for="tree2">분류</label>
+                <input type="text" list="searchOptions2" name="cate"/>
+                <datalist id="searchOptions2">
+                    <option></option>
+                    <option>일상</option>
+                    <option>일반업무</option>
+                    <option>기문당강의</option>
+                </datalist>
+
+                <h3>[시간]</h3>
+
+                <label>시작일</label>
+                <input type="date"name="startDate"/>
+
+                <label>시작시간</label>
+                <input type="time"name="startTime"/>
+
+                <label>종료일</label>
+                <input type="date"name="endDate"/>
+
+                <label>종료시간</label>
+                <input type="time" name="endTime"/>
+                <p></p>
+
+                <div style="border:3px solid">
+                    <h3>[주요내용]</h3>
+
+                    <label>참여자</label>
+                    <input type="text" name="partyPeople"/>
+
+                    <label>내용</label>
+                    <input type="text" name="title"/>
+
+                    <label>시간비율</label>
+                    <input type="number" name="inputNumber" step="0.1"/>
+
+                    <h3>[세부내용]</h3>
+
+                    <label>장소</label>
+                    <input type="text" name="inputLocation"/>
+
+                    <label>수단</label>
+                    <input type="text" name="inputTool"/>
+
+                    <label>목적</label>
+                    <input type="text" id="inputPurpose"/>
+
+                    <h3>[가계부]</h3>
+
+                    <label>(예상)비용</label>
+                    <input type="text" name="inputCost"/>
+
+                    <label>(예상)비용출처</label>
+                    <input type="text" name="inputCostBase"/>
+                    <p></p>
+
+                    <label>(예상)수익</label>
+                    <input type="text" name="inputReturn"/>
+
+                    <label>(예상)수익출처</label>
+                    <input type="text" id="inputReturnBase"/>
+
+                    <h3>[참고사항 및 비고]</h3>
+
+                    <label>비고</label>
+                    <input type="text" name="inputRef"/>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary">Submit</button>
+
+            </form>
+
+            <script
+                src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+        </body>
+    </html>
