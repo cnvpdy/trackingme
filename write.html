@@ -70,66 +70,110 @@
 
                 <h1>Tracking Me</h1>
 
-                <h3>[구분]</h3>
-                <label for="tree1">구분</label>
-                <input type="text" list="searchOptions1" name="div"/>
-                <datalist id="searchOptions1">
-                    <option>실행</option>
-                    <option>할일</option>
-                    <option>일정</option>
-                </datalist>
-
-                <label for="tree2">분류</label>
-                <input type="text" list="searchOptions2" name="cate"/>
-                <datalist id="searchOptions2">
-                    <option></option>
-                    <option>일상</option>
-                    <option>일반업무</option>
-                    <option>기문당강의</option>
-                </datalist>
-
                 <h3>[시간]</h3>
 
                 <label>시작일</label>
-                <input type="date"name="startDate"/>
+                <input type="date" name="startDate"/>
+                <p></p>
 
                 <label>시작시간</label>
-                <input type="time"name="startTime"/>
+                <input type="time" name="startTime"/>
+                <p></p>
 
                 <label>종료일</label>
-                <input type="date"name="endDate"/>
+                <input type="date" name="endDate"/>
+                <p></p>
 
                 <label>종료시간</label>
                 <input type="time" name="endTime"/>
                 <p></p>
 
                 <div style="border:3px solid">
+                    <h3>[구분]</h3>
+                    <label for="tree1">구분</label>
+                    <input type="text" list="searchOptions1" name="div"/>
+                    <datalist id="searchOptions1">
+                        <option>실행</option>
+                        <option>할일</option>
+                        <option>일정</option>
+                    </datalist>
+                    <p></p>
+
+                    <label for="tree2">분류</label>
+                    <input type="text" list="searchOptions2" name="cate"/>
+                    <datalist id="searchOptions2">
+                        <option></option>
+                        <option>일상</option>
+                        <option>일반업무</option>
+                        <option>기문당강의</option>
+                    </datalist>
+                    <p></p>
+
                     <h3>[주요내용]</h3>
 
                     <label>참여자</label>
                     <input type="text" name="partyPeople"/>
+                    <p></p>
 
                     <label>내용</label>
                     <input type="text" name="title"/>
+                    <p></p>
+
+                    <label>품명</label>
+                    <input type="text" name="item"/>
+                    <p></p>
+
+                    <label>규격</label>
+                    <input type="text" name="spec"/>
+                    <p></p>
+
+                    <label>단위</label>
+                    <input type="text" name="unit"/>
+                    <p></p>
+
+                    <label>수량</label>
+                    <input type="text" name="quantity"/>
+                    <p></p>
+
+                    <label>재료비단가</label>
+                    <input type="text" name="perCostMaterial"/>
+                    <p></p>
+
+                    <label>노무비단가</label>
+                    <input type="text" name="perCostHuman"/>
+                    <p></p>
+
+                    <label>경비단가</label>
+                    <input type="text" name="perCostEtc"/>
+                    <p></p>
+
+                    <label>합계단가</label>
+                    <input type="text" name="perCostTotal"/>
+                    <p></p>
 
                     <label>시간비율</label>
                     <input type="number" name="inputNumber" step="0.1"/>
+                    <p></p>
 
                     <h3>[세부내용]</h3>
 
                     <label>장소</label>
                     <input type="text" name="inputLocation"/>
+                    <p></p>
 
                     <label>수단</label>
                     <input type="text" name="inputTool"/>
+                    <p></p>
 
                     <label>목적</label>
                     <input type="text" id="inputPurpose"/>
+                    <p></p>
 
                     <h3>[가계부]</h3>
 
                     <label>(예상)비용</label>
                     <input type="text" name="inputCost"/>
+                    <p></p>
 
                     <label>(예상)비용출처</label>
                     <input type="text" name="inputCostBase"/>
@@ -137,14 +181,18 @@
 
                     <label>(예상)수익</label>
                     <input type="text" name="inputReturn"/>
+                    <p></p>
 
                     <label>(예상)수익출처</label>
                     <input type="text" id="inputReturnBase"/>
+                    <p></p>
 
                     <h3>[참고사항 및 비고]</h3>
 
                     <label>비고</label>
                     <input type="text" name="inputRef"/>
+                    <p></p>
+
                 </div>
                 <button type="submit" class="btn btn-outline-secondary">Submit</button>
 
