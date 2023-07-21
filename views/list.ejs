@@ -44,7 +44,9 @@
     </nav>
 
     <% for (var i = 0; i < posts.length; i ++) { %>
-      <h4><%= posts[i].구분 %></h4>
+      <h4><%= posts[i].id %></h4>
+
+      <p><%= posts[i].구분 %></p>
       <p><%= posts[i].분류 %></p>
       <p><%= posts[i].시작일 %></p>
       <p><%= posts[i].시작시간 %></p>
@@ -52,6 +54,14 @@
       <p><%= posts[i].종료시간 %></p>
       <p><%= posts[i].참여자 %></p>
       <p><%= posts[i].내용 %></p>
+      <p><%= posts[i].품명 %></p>
+      <p><%= posts[i].규격 %></p>
+      <p><%= posts[i].단위 %></p>
+      <p><%= posts[i].수량 %></p>
+      <p><%= posts[i].재료비단가 %></p>
+      <p><%= posts[i].노무비단가%></p>
+      <p><%= posts[i].경비단가 %></p>
+      <p><%= posts[i].합계단가 %></p>
       <p><%= posts[i].시간비율 %></p>
       <p><%= posts[i].장소 %></p>
       <p><%= posts[i].수단 %></p>
@@ -61,7 +71,6 @@
       <p><%= posts[i].수익 %></p>
       <p><%= posts[i].수익출처 %></p>
       <p><%= posts[i].비고 %></p>
-      <p><%= posts[i].id %></p>
 
     <% } %>
 
